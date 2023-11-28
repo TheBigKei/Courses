@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Стиль для основной страницы-->
+    <link rel="stylesheet" type="text/css" href="styles/main.css"> 
+    <!--Стиль для верхней навигационной панели-->
+    <link rel="stylesheet" type="text/css" href="styles/nav_pannel.css"> 
+    <!--Стиль для подвала (footer) сайта-->
+    <link rel="stylesheet" type="text/css" href="styles/footer.css"> 
+    <title>Main Page</title>
+</head>
+<body>
+    <!--Основной контейнер main-->
+    <div class="main"> 
+        <!--Контейнер для верхней навигационной панели-->
+        <div class="nav_pannel"> 
+            <!--Список объектов в навигационной панели-->
+            <div class="img_nav_conteiner">
+                <a href="index.html" id="a_img"><img src="images/home.png" alt="home.png" id="nav_home"></a> 
+            </div>  
+            <ul class="ul_list"> 
+                <!--Объекты внутри которых ссылки на другие страницы-->
+                <li id="li_nav"><a href="pages/Table/index.html" id="a_nav">Table</a></li>
+                <li id="li_nav"><a href="pages/Sekiro/index.html" id="a_nav">My favorite game</a></li>
+                <li id="li_nav"><a href="" id="a_nav" alt=""></a></li>
+                <li id="li_nav"><a href="" id="a_nav" alt=""></a></li>
+                <li id="li_nav"><a href="" id="a_nav" alt=""></a></li>
+            </ul>
+        </div>
+        <!--Контейнер для основного контента-->
+        <div class="content"> 
+            <h1>This is Hub for my homeworks and projects for courses</h1>
+        </div>     
+    </div>
+    <!--Контейнер функция для опускания footer в самый низ сайта-->
+    <div class="push"></div> 
+    <!--Подвал (footer) сайта-->
+    <footer> 
+        <!--Главный контейнер в footer-->
+        <div> 
+            <!--Блок контейнер-->
+           <div class="footer_block"> 
+            <!--Учебное учереждения курсов по программировнию МТИ-->
+                <p id="p_foot">This page made by TheBigKei for courses <a href="https://mti.edu.ru/" id="a_foot">"ОАНО ВО "МосТех""</a></p>
+                <!--Контейнер для картинки-->
+                <div class="image_conteiner"> 
+                    <!--Ссылка на сайт МТИ через картинку-->
+                    <a href="https://mti.edu.ru/" id="a_foot"> 
+                        <!--Лого МТИ-->
+                        <img src="images/mti_logo.svg" alt="mti_logo"> 
+                    </a>
+                </div>        
+            </div>
+            <!--Блок контейнер-->
+            <div class="footer_block">
+                <!--Мой GitHub-->
+                <p id="p_foot">My GitHub <a href="https://github.com/TheBigKei" id="a_foot">https://github.com/TheBigKei</a></p> 
+                <!--Контейнер для картинки-->
+                <div class="image_conteiner"> 
+                    <!--Ссылка на GitHub через картинку-->
+                    <a href="https://github.com/TheBigKei" id="a_foot">
+                        <!--Лого GitHub-->
+                        <img src="images/github_logo.png" alt="github_logo"> 
+                    </a>     
+                </div>
+            </div>   
+        </div>       
+    </footer>
+</body>
+</html>

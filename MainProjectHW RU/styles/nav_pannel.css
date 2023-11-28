@@ -1,0 +1,51 @@
+.nav_pannel{
+    background-color: #24292e;    /*Задний фон навигационной панели*/
+    height: 100px;    /*Выстора навигационное панели*/
+    display: flex;
+    align-items: center;
+}
+
+.img_nav_conteiner{
+    margin-left: 20px;
+}
+
+.ul_list{
+    flex: 1;
+}
+
+.ul_list, #li_nav{
+    list-style: none;    /*Убираем стандартные стили у ul и li*/
+    display: flex;    /*Объявляем ul и li, flex объектами */
+    justify-content: center;    /*Центрируем список по главной оси (горизонтальной) flex*/
+    align-items: center;    /*Центрируем список по главной оси (вертикальной) flex*/
+    font-size: 36px;    /*Размер шрифта у элементов списка*/
+    height: 100%;    /*Элементы занимают всё пространство материнского контейнера*/
+}
+
+#li_nav{
+    color: white;    /*Цвет шрифта*/
+    margin-inline: 50px;    /*Внутренний отступ между элементами li*/
+}
+
+#a_nav{
+    text-decoration: none;    /*Убираем подчёркивание ссылок*/
+    color: inherit;    /*Убираем стандартное выделение цвета для ссылки*/
+    position: relative;    /*Ставим позицию relative для создания анимаций*/
+}
+
+#a_nav::before {    /*Анимация нижней линии для ссылкок*/
+    content:"";    /*Ставим пустое значение для работы анимации*/
+    position: absolute;    /*Ставим абсолютную (absolute) позицию для псевдоэлемета, чтобы можно было настроить положение линии*/
+    width: 100%;    /*Ставим ширину во весь размер материнского контейнера (li)*/
+    height: 3px;    /*Высота нижней линии*/
+    background-color: white;    /*Цвет нижней линии*/
+    bottom: -15%;    /*Распологаем линию вниз*/
+    left: 50%;    /*Распологаем линию по центру контейнера*/
+    transform: translateX(-50%) scaleX(0);    /*Скрываем линию*/
+    transform-origin: center;    /*Ставим начало анимации с центра*/
+    transition: transform 0.3s;    /*Длительность анимации*/
+}
+
+#a_nav:hover::before {
+    transform: translateX(-50%) scaleX(1); /*Анимация нижней линии*/
+}

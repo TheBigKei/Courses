@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>Sekiro: Shadows Die Twice</title>
+</head>
+<body>
+    <div class="overlay">
+       <div class="main">
+        <div class="topPannel"> <!--Navigate menu-->
+        <ul class="ul_list">
+            <li><a id="menu" href="">About</a></li>
+            <li><a id="menu" href="">Mechanics</a></li>
+            <li><a id="menu" href="">Enemies</a></li>
+            <li><a id="menu" href="">Items</a></li>
+            <li><a id="menu" href="">NPCs</a></li>
+            <li><a id="menu" href="">Locations</a></li>
+        </ul>
+        </div>
+        <div class="content"> <!--Logo and about game-->
+            <img src="images/SekiroLogo.png" alt="SekiroLogo" id="logo">
+            <div class="textContainer">
+               <p>
+                <span id="gameName">Sekiro: Shadows Die Twice</span> is a third-person, action-adventure game with RPG elements,
+                developed by FromSoftware and published by Activision.
+                The single-player game puts players in the protagonist role of a hard-hearted warrior whose mission is to rescue his master,
+                a young lord, and exact revenge on his arch nemesis. As "Sekiro," or the "one-armed wolf",
+                players will discover the many ways to strategically approach combat and engage enemies.
+            </p> 
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><img src="images/screen1.png" id="Slide" alt="Slide 1"></div>
+                  <div class="swiper-slide"><img src="images/screen2.png" id="Slide" alt="Slide 2"></div>
+                  <div class="swiper-slide"><img src="images/screen3.png" id="Slide" alt="Slide 3"></div>
+                  <div class="swiper-slide"><img src="images/screen4.png" id="Slide" alt="Slide 4"></div>
+                  <div class="swiper-slide"><img src="images/screen5.png" id="Slide" alt="Slide 5"></div>
+                </div>
+                <!--Navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+        </div>
+        </div>
+        <!--footer and div push-->
+        <div class="push"></div>
+        <footer id="footer">
+            <div class="footerLogos">
+                <a href="https://www.activision.com/"><img src="images/ActivisionLogo.png" alt="ActivisionLogo" id="ActivisionLogo"></a>
+                <a href="http://www.fromsoftware.jp/jp/"><img src="images/FromSoftwareLogo.png" alt="FromSoftwareLogo" id="FromSoftwareLogo"></a>  
+            </div>
+            <p id="footerText">©2019,2023 FromSoftware, Inc. 
+                All rights reserved. ACTIVISION is a trademark of Activision Publishing Inc.
+                All other trademarks and trade names are the properties of their respective owners.</p>
+        </footer>
+    </div> 
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        direction: 'horizontal',
+        loop: false,
+
+         // Navigation arrows
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+    </script>
+</body>
+</html>

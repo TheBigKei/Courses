@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+}
+
+body{
+    background: url('../images/MainScreen.png') no-repeat center center fixed; /*BackgroundScreen*/
+    background-size: cover;
+    color: white;
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.overlay {  /*Background image*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.topPannel{     /*Navigate menu*/
+    height: 10%;
+    vertical-align: top;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.5)
+}
+
+.ul_list{   /*Navigate items list*/
+    height: 100px;
+    margin: 0;
+}
+
+ul, li{     /*Navigate items*/
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    align-items: center;
+}
+
+li{
+    height: 44px;
+    padding-inline: 75px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+#menu{      /*Link to next page in navigate menu*/
+    height: 40px;
+}
+
+#menu::before {     /*Items animation ::before*/
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    bottom: -15%;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s; 
+}
+
+#menu:hover::before {   /*Items animation*/
+    transform: translateX(-50%) scaleX(1);
+    transform-origin: center;
+}
+
+.content{       /*About the game conteiner*/
+    margin-top: 10%;
+    width: 50%;
+    height: 40%;
+    position: relative;
+}
+#logo{      /*Sekiro:Shadows Die Twice logo*/
+    width: 45%;
+    height: 45%;
+    padding-left: 35%;
+
+}
+.textContainer{     /*About the game text conteiner*/
+    padding-top: 50px;
+    padding-left: 15%;
+    font-size: 24px;
+}
+#gameName{      /*Highlighting game name*/
+    font-weight: bold;
+    font-style: italic;
+}
+
+.swiper { /*Swiper*/
+    margin-top: 100px;
+    width: 600px;
+    height: 300px;
+}
+
+#Slide{
+    width: 600px;
+    height: 300px;
+}
+
+#footer{     /*Footer container*/
+    height: 130px;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.5);
+    display: block;
+    align-items: center;
+    
+}
+
+.push{      /*Footer push to bottom*/
+    height: 130px;
+    min-height: 50%;
+    height: auto !important;
+    margin: 0 auto -130px;
+}
+
+.footerLogos{   /*Footer company logos*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+#ActivisionLogo,#FromSoftwareLogo{
+    margin-inline: 50px;
+}
+
+#footerText{    /*Company Rights*/
+text-align: center;
+padding-top: 20px;
+}
