@@ -5,12 +5,12 @@
     align-items: center;
 }
 
-.img_nav_conteiner{
-    margin-left: 20px;
+.img_nav_conteiner{    /*img контейнер*/
+    margin-left: 20px;    /*Создаём отступ слева для контейнера*/
 }
 
-.ul_list{
-    flex: 1;
+.ul_list{    /*Класс списка*/
+    flex: 1;    /*Делаем дочерний контейнер, первым объектом внутри flexbox*/
 }
 
 .ul_list, #li_nav{
