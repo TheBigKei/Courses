@@ -9,25 +9,65 @@
     margin-left: 20px;    /*Создаём отступ слева для контейнера*/
 }
 
-.ul_list{    /*Класс списка*/
-    flex: 1;    /*Делаем дочерний контейнер, первым объектом внутри flexbox*/
+.menu_container{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    font-size: 30px;
 }
-
-.ul_list, #li_nav{
-    list-style: none;    /*Убираем стандартные стили у ul и li*/
-    display: flex;    /*Объявляем ul и li, flex объектами */
-    justify-content: center;    /*Центрируем список по главной оси (горизонтальной) flex*/
-    align-items: center;    /*Центрируем список по главной оси (вертикальной) flex*/
-    font-size: 36px;    /*Размер шрифта у элементов списка*/
-    height: 100%;    /*Элементы занимают всё пространство материнского контейнера*/
+/*-------------------------------------------------------------------------*/
+#p_nav{
+    
+    display: inline-block;
 }
+#a_nav1 {
+    display: block;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #2f363d;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown_content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown_content a:hover {background-color: #1f2429}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown_content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover #a_nav1 {
+    background-color: #1f2429;
+  }
+/*------------------------------------------------------------------------------------------*/
 
-#li_nav{
-    color: white;    /*Цвет шрифта*/
-    margin-inline: 50px;    /*Внутренний отступ между элементами li*/
-}
-
-#a_nav{
+#a_nav, #a_nav1{
+    display: block;
     text-decoration: none;    /*Убираем подчёркивание ссылок*/
     color: inherit;    /*Убираем стандартное выделение цвета для ссылки*/
     position: relative;    /*Ставим позицию relative для создания анимаций*/
@@ -39,11 +79,11 @@
     width: 100%;    /*Ставим ширину во весь размер материнского контейнера (li)*/
     height: 3px;    /*Высота нижней линии*/
     background-color: white;    /*Цвет нижней линии*/
-    bottom: -15%;    /*Распологаем линию вниз*/
+    bottom: 15%;    /*Распологаем линию внизу*/
     left: 50%;    /*Распологаем линию по центру контейнера*/
     transform: translateX(-50%) scaleX(0);    /*Скрываем линию*/
     transform-origin: center;    /*Ставим начало анимации с центра*/
-    transition: transform 0.3s;    /*Длительность анимации*/
+    transition: transform 0.7s;    /*Длительность анимации*/
 }
 
 #a_nav:hover::before {
