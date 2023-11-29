@@ -1,91 +1,73 @@
-.nav_pannel{
-    background-color: #24292e;    /*Задний фон навигационной панели*/
-    height: 100px;    /*Выстора навигационное панели*/
-    display: flex;
-    align-items: center;
+.nav_pannel{    /*Навигационная панель*/
+  background-color: #24292e;    /*Задний фон навигационной панели*/
+  height: 100px;    /*Выстора навигационное панели*/
+  display: flex;    /*Объявляем всю навигационную панель flex элементом*/
+  align-items: center;    /*Центрируем все объекты внутри панели по поперечной оси (Y)*/
+  color: white;
 }
 
 .img_nav_conteiner{    /*img контейнер*/
-    margin-left: 20px;    /*Создаём отступ слева для контейнера*/
+  margin-left: 20px;    /*Создаём отступ слева для контейнера*/
 }
 
-.menu_container{
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    width: 100%;
-    height: inherit;
-    font-size: 30px;
+.menu_container{    /*Контейнер для меню*/
+  display: flex;    /*Объявляем меню как flex объект*/
+  justify-content: center;    /*Центрируем объекты внутри понели по основной оси (X)*/
+  align-items: center;    /*Центрируем все объекты внутри панели по поперечной оси (Y)*/
+  width: 100%;    /*Контейнер меню занимает всю ширину панели*/
+  height: inherit;    /*Ставим высоту как у материнского контейнера*/
 }
-/*-------------------------------------------------------------------------*/
-#p_nav{
-    
-    display: inline-block;
+
+#a_nav1 {    /*Dropdown ссылка на описания модуля*/
+  font-size: 30px;    /*Размер текста*/
+  cursor: pointer;    /*Изменение курсора при наведении*/
 }
-#a_nav1 {
-    display: block;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-  }
   
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
+.dropdown {    /*Контейнер для элементов*/
+  margin-inline: 50px;    /*Междустрочный отступ у контейнеров*/
+}
   
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown_content {
-    display: none;
-    position: absolute;
-    background-color: #2f363d;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  }
+.dropdown_content {   /*dropdown контейнер для ссылок*/
+  display: none;    /*Скрываем по умолчанию*/
+  text-align: center;    /*Центрируем весь текст ссылок по центру*/
+  width: 115px;    /*Ставим ширину таблицы*/
+  position: absolute;    /*Ставим абсолютную позицию, чтофбы он не залезал на другие элементы*/
+  background-color: #2f363d;    /*Цвет заднего фона*/
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);    /*Тень позади таблицы*/
+}
   
-  /* Links inside the dropdown */
-  .dropdown_content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
+ #a_nav {    /*Ссылки внутри dropdown*/
+  padding: 12px 16px;    /*Делаем отступы у ссылок*/
+}
   
-  /* Change color of dropdown links on hover */
-  .dropdown_content a:hover {background-color: #1f2429}
+.dropdown_content #a_nav:hover {    /*Изменение цвета при наведении на ссылки*/
+  background-color: #1f2429
+}
   
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown_content {
-    display: block;
-  }
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover #a_nav1 {
-    background-color: #1f2429;
-  }
-/*------------------------------------------------------------------------------------------*/
+.dropdown:hover .dropdown_content {    /*Показывает таблицу с ссылками при наведении*/
+  display: block;
+}
 
 #a_nav, #a_nav1{
-    display: block;
-    text-decoration: none;    /*Убираем подчёркивание ссылок*/
-    color: inherit;    /*Убираем стандартное выделение цвета для ссылки*/
-    position: relative;    /*Ставим позицию relative для создания анимаций*/
+  display: block;    /*Объявляем блочными элементами*/
+  text-decoration: none;    /*Убираем подчёркивание ссылок*/
+  color: inherit;    /*Убираем стандартное выделение цвета для ссылки*/
+  position: relative;    /*Ставим позицию relative для создания анимаций*/
 }
 
 #a_nav::before {    /*Анимация нижней линии для ссылкок*/
-    content:"";    /*Ставим пустое значение для работы анимации*/
-    position: absolute;    /*Ставим абсолютную (absolute) позицию для псевдоэлемета, чтобы можно было настроить положение линии*/
-    width: 100%;    /*Ставим ширину во весь размер материнского контейнера (li)*/
-    height: 3px;    /*Высота нижней линии*/
-    background-color: white;    /*Цвет нижней линии*/
-    bottom: 15%;    /*Распологаем линию внизу*/
-    left: 50%;    /*Распологаем линию по центру контейнера*/
-    transform: translateX(-50%) scaleX(0);    /*Скрываем линию*/
-    transform-origin: center;    /*Ставим начало анимации с центра*/
-    transition: transform 0.7s;    /*Длительность анимации*/
+  content:"";    /*Ставим пустое значение для работы анимации*/
+  position: absolute;    /*Ставим абсолютную (absolute) позицию для псевдоэлемета, чтобы можно было настроить положение линии*/
+  width: 100%;    /*Ставим ширину во весь размер материнского контейнера (li)*/
+  height: 3px;    /*Высота нижней линии*/
+  background-color: white;    /*Цвет нижней линии*/
+  bottom: 15%;    /*Распологаем линию внизу*/
+  left: 50%;    /*Распологаем линию по центру контейнера*/
+  transform: translateX(-50%) scaleX(0);    /*Скрываем линию*/
+  transform-origin: center;    /*Ставим начало анимации с центра*/
+  transition: transform 0.7s;    /*Длительность анимации*/
 }
 
 #a_nav:hover::before {
-    transform: translateX(-50%) scaleX(1); /*Анимация нижней линии*/
+  transform: translateX(-50%) scaleX(1); /*Анимация нижней линии*/
 }
