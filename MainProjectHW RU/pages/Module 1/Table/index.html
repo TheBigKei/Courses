@@ -5,47 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework №1</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/nav_pannel.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
 </head>
 <body>
     <div class="main">
-        <div class="top_pannel">
-        <ul class="ul_list">
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-        </ul>
+        <div class="nav_pannel"> 
+            <!--Контейнер для картинки-->
+            <div class="img_nav_conteiner">
+                <a href="../../../index.html" id="a_img"><img src="images/home.png" alt="home.png" id="nav_home"></a> 
+            </div>
+            <!--Контейнер для dropdown элементов-->
+            <div class="menu_container">
+                <!--Основные контейнеры для ссылок-->
+                <div class="dropdown">
+                    <a id="a_nav1">Module 1</a>
+                    <!--Контейнер для dropdown списка-->
+                    <div class="dropdown_content">
+                      <a href="index.html" id="a_nav">Topic 1.2</a></p>
+                      <a href="../Sekiro/index.html" id="a_nav">Topic 1.3</a></p>
+                      <a href="" id="a_nav">Topic 1.4</a></p>
+                      <a href="" id="a_nav">Topic 1.5</a></p>
+                      <a href="" id="a_nav">Topic 1.6</a></p>
+                      <a href="" id="a_nav">Topic 1.7</a></p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a id="a_nav1">Module 2</a>
+                    <div class="dropdown_content">
+                      <a href="" id="a_nav">Topic 1.1</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="table">
-            <table>
-                <tr>
-                    <th></th>
-                    <th>Milk</th>
-                    <th>Pepsi</th>
-                    <th>Pilk</th>
-                    <th>Cheese</th>
-                    <th>Chocolate</th>
-                </tr>
-                <tr>
-                    <th>Upsides</th>
-                    <th>Strengthens bones</th>
-                    <th>Taste and a lot of gases</th>
-                    <th>Every single thats you could imagine</th>
-                    <th>Can be added to many dishes</th>
-                    <th>Too much sugar</th>
-                </tr>
-                <tr>
-                    <th>Downsides</th>
-                    <th>Lactose intolerance</th>
-                    <th>Too many sugar</th>
-                    <th>None</th>
-                    <th>Lactose intolerance</th>
-                    <th>Too much sugar</th>
-                </tr>
-                </tbody>  
-            </table>
+        <div class="content">
+            <div class="text_conteiner">
+            <p id="p_main">In this my first homework, I created a simple table with descriptions about upsides and downsides some products. 
+                            I learned structure of the table and how build it. The main task for the homework was that it taught me how to use styles and apply them in html</p>
+            </div>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Milk</th>
+                        <th>Pepsi</th>
+                        <th>Pilk</th>
+                        <th>Cheese</th>
+                        <th>Chocolate</th>
+                    </tr>
+                    <tr>
+                        <th>Upsides</th>
+                        <th>Strengthens bones</th>
+                        <th>Taste and a lot of gases</th>
+                        <th>Every single thats you could imagine</th>
+                        <th>Can be added to many dishes</th>
+                        <th>Too much sugar</th>
+                    </tr>
+                    <tr>
+                        <th>Downsides</th>
+                        <th>Lactose intolerance</th>
+                        <th>Too many sugar</th>
+                        <th>None</th>
+                        <th>Lactose intolerance</th>
+                        <th>Too much sugar</th>
+                    </tr> 
+                </table>
+            </div>
+        </div>     
+    </div>  
+<!--Контейнер функция для опускания footer в самый низ сайта-->
+<div class="push"></div> 
+<!--Подвал (footer) сайта-->
+<footer> 
+    <!--Главный контейнер в footer-->
+    <div> 
+        <!--Блок контейнер-->
+       <div class="footer_block"> 
+        <!--Учебное учереждения курсов по программировнию МТИ-->
+            <p id="p_foot">This page made by TheBigKei for courses <a href="https://mti.edu.ru/" id="a_foot">"ОАНО ВО "МосТех""</a></p>
+            <!--Контейнер для картинки-->
+            <div class="image_conteiner"> 
+                <!--Ссылка на сайт МТИ через картинку-->
+                <a href="https://mti.edu.ru/" id="a_foot"> 
+                    <!--Лого МТИ-->
+                    <img src="images/mti_logo.svg" alt="mti_logo"> 
+                </a>
+            </div>        
         </div>
-    </div>
+        <!--Блок контейнер-->
+        <div class="footer_block">
+            <!--Мой GitHub-->
+            <p id="p_foot">My GitHub <a href="https://github.com/TheBigKei" id="a_foot">https://github.com/TheBigKei</a></p> 
+            <!--Контейнер для картинки-->
+            <div class="image_conteiner"> 
+                <!--Ссылка на GitHub через картинку-->
+                <a href="https://github.com/TheBigKei" id="a_foot">
+                    <!--Лого GitHub-->
+                    <img src="images/github_logo.png" alt="github_logo"> 
+                </a>     
+            </div>
+        </div>   
+    </div>       
+</footer>
 </body>
 </html>

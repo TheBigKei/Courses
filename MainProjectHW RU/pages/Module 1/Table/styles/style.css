@@ -1,60 +1,22 @@
 *{
-    margin: 0;
+    margin: 0;  /*Убираем изначальные отступы у сайта*/
 }
 
-body{
-    background-color: #2b3137;
-    color: white;
+body, html{
+    background-color: #2b3137;  /*Задний фон всего сайта*/
+    color: #ffffff;    /*Цвет шрифта всей страницы*/
+    height: 100%;
+    min-width: 20%;
 }
 
-ul, li{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    font-size: 36px;
-    align-items: center;
+.text_conteiner{
+    margin-left: 10%;
+    width: 80%;
 }
 
-li{
-    height: 44px;
-    padding-left: 100px;
-}
-
-a::before {
-    content:"";
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background-color: white;
-    bottom: -15%;
-    left: 50%;
-    transform: translateX(-50%) scaleX(0);
-    transform-origin: center;
-    transition: transform 0.3s; 
-}
-
-a:hover::before {
-    transform: translateX(-50%) scaleX(1);
-    transform-origin: center;
-  }
-
-a{
-    text-decoration: none;
-    color: inherit;
-    height: 40px;
-    position: relative;
-}
-
-.ul_list{
-    height: 100px;
-    margin: 0;
-}
-
-.top_pannel{
- background-color: darkviolet;
- height: 10%;
- vertical-align: top;
- width: 100%;
+#p_main{
+    font-size: 30px;
+    text-align: center;
 }
 
 table{
