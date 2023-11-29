@@ -9,3 +9,6 @@ body, html{
     min-width: 20%;
 }
 
+#h1_content{
+    text-align: center; /*Центрируем текст*/
+}
