@@ -40,14 +40,15 @@ label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
+    font-weight: 500;
 }
 
-#lebel_gender{
+#label_gender{
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-#lebel_message{
+#label_message{
     margin-top: 20px;
 }
 
@@ -59,12 +60,11 @@ textarea{
     margin-bottom: 20px;
     border-radius: 5px;
     border: none;
-    background-color: #84addb;
     font-size: 16px;
 }
 
 input[type="submit"]{
-    background-color: #84addb;
+    background-color: #ffffff;
     color: black;
     padding: 10px 20px;
     border-radius: 5px;
@@ -78,7 +78,7 @@ textarea{
 }
 
 input[type="submit"]:hover{
-    background-color: #84addb;
+    background-color: #d4d4d4;
 }
 
 input,textarea:focus {
