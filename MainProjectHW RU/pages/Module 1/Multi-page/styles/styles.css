@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+}
+
+body, html{
+    background-color: #2b3137;
+    height: 100%;
+    color: white;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+table{
+ display: flex;
+ width: 100%;
+ padding-top: 10%;
+ border-collapse: collapse;
+ justify-content: center;
+ font-size: 24px;
+}
+
+th,td{
+    border: 2px solid white;
+    padding: 8px;
+}
+
+th{
+    width: 150px;
+    font-weight: 500;
+}
+
+form{
+    background-color: #24292e;;
+    width: 400px;
+    padding: 45px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#lebel_gender{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#lebel_message{
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #84addb;
+    font-size: 16px;
+}
+
+input[type="submit"]{
+    background-color: #84addb;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+textarea{
+    resize: none;
+}
+
+input[type="submit"]:hover{
+    background-color: #84addb;
+}
+
+input,textarea:focus {
+    outline: none;
+}
+
+#submit{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
