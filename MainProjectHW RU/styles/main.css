@@ -7,8 +7,10 @@ body, html{
     color: #ffffff;    /*Цвет шрифта всей страницы*/
     height: 100%;
     min-width: 20%;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 #h1_content{
     text-align: center; /*Центрируем текст*/
+    font-weight: 500;
 }

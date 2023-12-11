@@ -4,21 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/nav_pannel.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Sekiro: Shadows Die Twice</title>
 </head>
 <body>
     <div class="overlay">
        <div class="main">
-        <div class="topPannel"> <!--Navigate menu-->
-        <ul class="ul_list">
-            <li><a id="menu" href="">About</a></li>
-            <li><a id="menu" href="">Mechanics</a></li>
-            <li><a id="menu" href="">Enemies</a></li>
-            <li><a id="menu" href="">Items</a></li>
-            <li><a id="menu" href="">NPCs</a></li>
-            <li><a id="menu" href="">Locations</a></li>
-        </ul>
+        <div class="nav_pannel"> 
+            <!--Контейнер для картинки-->
+            <div class="img_nav_conteiner">
+                <a href="../../../index.html" id="a_img"><img src="images/home.png" alt="home.png" id="nav_home"></a> 
+            </div>
+            <!--Контейнер для dropdown элементов-->
+            <div class="menu_container">
+                <!--Основные контейнеры для ссылок-->
+                <div class="dropdown">
+                    <a id="a_nav1">Module 1</a>
+                    <!--Контейнер для dropdown списка-->
+                    <div class="dropdown_content">
+                      <a href="../Table/index.html" id="a_nav">Table</a>
+                      <a href="index.html" id="a_nav">Sekiro</a>
+                      <a href="../About_me/index.html" id="a_nav">About me</a>
+                      <a href="" id="a_nav">Topic 1.5</a>
+                      <a href="" id="a_nav">Topic 1.6</a>
+                      <a href="" id="a_nav">Topic 1.7</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a id="a_nav1">Module 2</a>
+                    <div class="dropdown_content">
+                      <a href="" id="a_nav">Topic 1.1</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="content"> <!--Logo and about game-->
             <img src="images/SekiroLogo.png" alt="SekiroLogo" id="logo">
