@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <link rel="stylesheet" type="text/css" href="styles/footer.css">
     <link rel="stylesheet" type="text/css" href="styles/nav_pannel.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
     <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet"> 
     <title>About me</title>
 </head>
@@ -40,7 +40,7 @@
             </div>
         </div>
         <div class="input-container"> <!--Main field container-->
-            <p>My Favorites</p>
+            <p id="p_main">My Favorites</p>
             <div class="input-field">
               <input type="text" id="field1" placeholder="Food">
             </div>
@@ -95,39 +95,38 @@
             <button>Send</button>
         </div>
     </div>
-    <!--Контейнер функция для опускания footer в самый низ сайта-->
-<div class="push"></div> 
-<!--Подвал (footer) сайта-->
-<footer> 
-    <!--Главный контейнер в footer-->
-    <div> 
-        <!--Блок контейнер-->
-       <div class="footer_block"> 
-        <!--Учебное учереждения курсов по программировнию МТИ-->
-            <p id="p_foot">This page made by TheBigKei for courses <a href="https://mti.edu.ru/" id="a_foot">"ОАНО ВО "МосТех""</a></p>
-            <!--Контейнер для картинки-->
-            <div class="image_conteiner"> 
-                <!--Ссылка на сайт МТИ через картинку-->
-                <a href="https://mti.edu.ru/" id="a_foot"> 
-                    <!--Лого МТИ-->
-                    <img src="images/mti_logo.svg" alt="mti_logo"> 
-                </a>
-            </div>        
-        </div>
-        <!--Блок контейнер-->
-        <div class="footer_block">
-            <!--Мой GitHub-->
-            <p id="p_foot">My GitHub <a href="https://github.com/TheBigKei" id="a_foot">https://github.com/TheBigKei</a></p> 
-            <!--Контейнер для картинки-->
-            <div class="image_conteiner"> 
-                <!--Ссылка на GitHub через картинку-->
-                <a href="https://github.com/TheBigKei" id="a_foot">
-                    <!--Лого GitHub-->
-                    <img src="images/github_logo.png" alt="github_logo"> 
-                </a>     
+    <div class="push"></div> 
+    <!--Подвал (footer) сайта-->
+    <footer> 
+        <!--Главный контейнер в footer-->
+        <div> 
+            <!--Блок контейнер-->
+           <div class="footer_block"> 
+            <!--Учебное учереждения курсов по программировнию МТИ-->
+                <p id="p_foot">This page made by TheBigKei for courses <a href="https://mti.edu.ru/" id="a_foot">"ОАНО ВО "МосТех""</a></p>
+                <!--Контейнер для картинки-->
+                <div class="image_conteiner"> 
+                    <!--Ссылка на сайт МТИ через картинку-->
+                    <a href="https://mti.edu.ru/" id="a_foot"> 
+                        <!--Лого МТИ-->
+                        <img src="images/mti_logo.svg" alt="mti_logo"> 
+                    </a>
+                </div>        
             </div>
-        </div>   
-    </div>       
-</footer>
+            <!--Блок контейнер-->
+            <div class="footer_block">
+                <!--Мой GitHub-->
+                <p id="p_foot">My GitHub <a href="https://github.com/TheBigKei" id="a_foot">https://github.com/TheBigKei</a></p> 
+                <!--Контейнер для картинки-->
+                <div class="image_conteiner"> 
+                    <!--Ссылка на GitHub через картинку-->
+                    <a href="https://github.com/TheBigKei" id="a_foot">
+                        <!--Лого GitHub-->
+                        <img src="images/github_logo.png" alt="github_logo"> 
+                    </a>     
+                </div>
+            </div>   
+        </div>       
+    </footer>
 </body>
 </html>
