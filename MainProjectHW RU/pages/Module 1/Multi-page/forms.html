@@ -10,68 +10,65 @@
     <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet"> 
 </head>
 <body>
-    <div class="main">
-        <div class="nav_pannel"> 
-            <!--Контейнер для картинки-->
-            <div class="img_nav_conteiner">
-                <a href="../../../index.html" id="a_img"><img src="images/home.png" alt="home.png" id="nav_home"></a> 
+    <div class="nav_pannel"> 
+        <!--Контейнер для картинки-->
+        <div class="img_nav_conteiner">
+            <a href="../../../index.html" id="a_img"><img src="images/home.png" alt="home.png" id="nav_home"></a> 
+        </div>
+        <!--Контейнер для dropdown элементов-->
+        <div class="menu_container">
+            <!--Основные контейнеры для ссылок-->
+            <div class="dropdown">
+                <a id="a_nav1">Module 1</a>
+                <!--Контейнер для dropdown списка-->
+                <div class="dropdown_content">
+                    <a href="../Table/index.html" id="a_nav">Table</a>
+                    <a href="../Sekiro/index.html" id="a_nav">Sekiro</a>
+                    <a href="../About_me/index.html" id="a_nav">About me</a>
+                    <a href="index.html" id="a_nav">Multi-page</a>
+                    <a href="../Text_shadow_3D/index.html" id="a_nav">Text shadow 3D</a>
+                    <a href="" id="a_nav">Topic 1.7</a>
+                </div>
             </div>
-            <!--Контейнер для dropdown элементов-->
-            <div class="menu_container">
-                <!--Основные контейнеры для ссылок-->
-                <div class="dropdown">
-                    <a id="a_nav1">Module 1</a>
-                    <!--Контейнер для dropdown списка-->
-                    <div class="dropdown_content">
-                      <a href="../Table/index.html" id="a_nav">Table</a>
-                      <a href="../Sekiro/index.html" id="a_nav">Sekiro</a>
-                      <a href="../About_me/index.html" id="a_nav">About me</a>
-                      <a href="index.html" id="a_nav">Multi-page</a>
-                      <a href="../Text_shadow_3D/index.html" id="a_nav">Text shadow 3D</a>
-                      <a href="" id="a_nav">Topic 1.7</a>
-                    </div>
+            <div class="dropdown">
+                <a id="a_nav1">Module 2</a>
+                <div class="dropdown_content">
+                    <a href="" id="a_nav">Topic 1.1</a>
                 </div>
-                <div class="dropdown">
-                    <a id="a_nav1">Module 2</a>
-                    <div class="dropdown_content">
-                      <a href="" id="a_nav">Topic 1.1</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <a id="a_nav1">Pages</a>
-                    <div class="dropdown_content">
-                      <a href="index.html" id="a_nav">Films</a>
-                      <a href="cast.html" id="a_nav">Cast</a>
-                      <a href="forms.html" id="a_nav">Form</a>
-                    </div>
+            </div>
+            <div class="dropdown">
+                <a id="a_nav1">Pages</a>
+                <div class="dropdown_content">
+                    <a href="index.html" id="a_nav">Films</a>
+                    <a href="cast.html" id="a_nav">Cast</a>
+                    <a href="forms.html" id="a_nav">Form</a>
                 </div>
             </div>
         </div>
-            <form>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name"><br>
-
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email"><br>
-
-                <p>Select your gender</p>
-                <label id="label_gender" for="male">Male</label>
-                <input type="radio" id="male" name="gender" value="male"><br>
-
-                <label id="label_gender" for="female">Female</label>
-                <input type="radio" id="female" name="gender" value="female"><br>
-
-                <label id="label_gender" for="helicopter">Attack Helicopter</label>
-                <input type="radio" id="helicopter" name="gender" value="helicopter"><br>  
-
-                <label id="label_message" for="message">Message</label>
-                <textarea name="message" id="message"></textarea>
-                <div class="input_container">
-                    <input type="submit" value="Submit" id="submit">
-                </div>
-                
-            </form>
     </div>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name"><br>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email"><br>
+
+            <p>Select your gender</p>
+            <label id="label_gender" for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male"><br>
+
+            <label id="label_gender" for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female"><br>
+
+            <label id="label_gender" for="helicopter">Attack Helicopter</label>
+            <input type="radio" id="helicopter" name="gender" value="helicopter"><br>  
+
+            <label id="label_message" for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+            <div class="input_container">
+                <input type="submit" value="Submit" id="submit">
+            </div>
+        </form>
     <!--Контейнер функция для опускания footer в самый низ сайта-->
     <div class="push"></div> 
     <!--Подвал (footer) сайта-->
