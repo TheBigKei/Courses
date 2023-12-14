@@ -1,0 +1,66 @@
+*, body{
+    margin: 0;
+}
+
+body,html {
+    background-color: #2b3137;
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.text_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30vh;
+}
+
+h1{
+    font-size: 128px;
+    perspective: 1000px;
+    transition: 3s;
+    font-weight: 500;
+}
+
+h1:hover {   
+    text-shadow: -1px -1px 1px red,
+    0 1px 0 #250852,
+    0 2px 0 red,
+    0 3px 0 #250852,
+    0 4px 0 red,
+    0 5px 0 #250852,
+    0 6px 0 red,
+    0 7px 0 #250852,
+    0 8px 0 red,
+    0 9px 0 #250852,
+    0 10px 0 red,
+    0 11px 0 #250852,
+    0 12px 0 red,
+    0 13px 0 #250852,
+    0 14px 0 red,
+    0 15px 0 #250852,
+    10px 25px 35px red;
+    cursor: pointer;
+}
+
+img:hover + #task2 {   
+    text-shadow: -1px -1px 1px red,
+    0 1px 0 #250852,
+    0 2px 0 red,
+    0 3px 0 #250852,
+    0 4px 0 red,
+    0 5px 0 #250852,
+    0 6px 0 red,
+    0 7px 0 #250852,
+    0 8px 0 red,
+    0 9px 0 #250852,
+    0 10px 0 red,
+    0 11px 0 #250852,
+    0 12px 0 red,
+    0 13px 0 #250852,
+    0 14px 0 red,
+    0 15px 0 #250852,
+    10px 25px 35px red;
+    cursor: pointer;
+}
