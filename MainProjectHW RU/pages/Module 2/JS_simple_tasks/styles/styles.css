@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+}
+
+body, html{
+    background-color: #2b3137;
+    height: 100%;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #ffffff;
+}
+
+.content{
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+}
+
+#math_output, #p_main{
+    font-size: 24px;
+}
+
+#p_main{
+    width: 400px;
+}
