@@ -42,7 +42,7 @@
 }
   
 .dropdown_content #a_nav:hover {    /*Изменение цвета при наведении на ссылки*/
-  background-color: #1f2429
+  background-color: #1f2429;
 }
   
 .dropdown:hover .dropdown_content {    /*Показывает список с ссылками при наведении*/
