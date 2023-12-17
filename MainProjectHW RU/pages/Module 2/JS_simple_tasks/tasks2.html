@@ -30,7 +30,7 @@
                     <a href="" id="a_nav">Topic 1.7</a>
                 </div>
             </div>
-            
+
             <div class="dropdown">
                 <a id="a_nav1">Module 2</a>
                 <div class="dropdown_content">
@@ -38,7 +38,6 @@
                     <a href="index.html" id="a_nav">Simple tasks</a>
                 </div>
             </div>
-
             <div class="dropdown">
                 <a id="a_nav1">Tasks</a>
                 <div class="dropdown_content">
@@ -49,24 +48,63 @@
         </div>
     </div>
     <div class="content">
-            <p>1. Create a variable 'a' with a value of 10 and a variable 'b' with a value of 2. 
-                Display their sum, difference, product, and quotient on the screen</p>
-            <p id="math_output"></p>
+        <p>1. Create a variable named "myName" and assign it the value of your name.
+             Display the variable's value on the screen.</p>
+        <p id="myName"></p>
 
-            <p>2. Create a variable 'c' with a value of 10 and a variable 'd' with a value of 5. 
-                Sum them up and assign the result to the variable 'result'. Display the value of result on the screen.</p>
-            <p id="result"></p>
+        <p>2. Declare two variables, one named "x" and the other named "y", assign them numerical values, and display their sum on the screen.</p>
+        <p id="math_output"></p>
 
-            <p>3. Assign the number 1.5 to variable 'a', and the number 0.75 to variable 'b'.
-                Find the sum of these variables and display it on the screen.</p>
-            <p id="math_output1"></p>
-
-            <p>4. Create a variable 'a', assign it some positive or negative number. 
-                Display on the screen this number with the opposite sign.</p>
-            <p id="math_output2"></p>
-
-            <p>5. Create a string with your name and a string with your surname. Display this data on the screen.</p>
-            <p id="string_output"></p>
+        <p>3. Create a variable named "isAdult" and assign it a value of true or false based on your age (if you are over 18, the value will be true; otherwise, false).
+             Display the variable's value on the screen.</p>
+        <p id="isAdult"></p>
+        
+        <p>4. Create a variable named "text" and assign it a value as any string.
+             Display the length of this string on the screen.</p>
+        <p id="textLength"></p>
+        
+        <p>5. Declare a variable named "pi" and assign it the value of the number π (3.14).
+             Display the variable's value on the screen.</p>
+        <p id="pi"></p>
+        
+        <p>6. Create a variable named "isAdmin" and assign it a value of true or false based on whether you are a website administrator.
+             Display the variable's value on the screen.</p>
+        <p id="isAdmin"></p>
+        
+        <p>7. Declare two variables named "width" and "height" and assign them numerical values representing the width and height of a rectangle.
+             Calculate the rectangle's area (width multiplied by height) and display the result on the screen.</p>
+        <p id="rectangle"></p>
+        
+        <p>8. Create a variable named "today" and assign it the value of the current date.
+             Display the variable's value on the screen.</p>
+        <p id="currentDate"></p>
+        
+        <p>9. Declare a variable named "isPositive" and assign it a value of true or false based on whether the number you want to check is positive 
+            (if the number is greater than zero, the value of the variable will be true; otherwise, false).
+             Display the variable's value on the screen.</p>
+        <p id="isPositive"></p>
+        
+        <p>10. Write a script that prompts the user for two numbers and displays their sum, difference, product, and quotient on the screen.
+             Use JavaScript variables and operators.</p>
+        <div class="task10_container">
+                <div class="form_container">
+                    <p id="p_form">Enter numbers</p>
+                    <form id="myForm">
+                        <label for="a">Number 'a':</label>
+                        <input type="text" id="a" name="a" required>
+                    
+                        <label for="b">Number 'b':</label>
+                        <input type="text" id="b" name="b" required>
+                        <br>
+                        <div class="input_container">
+                            <input type="submit" value="Submit">   
+                        </div>
+                    </form>
+                </div>
+   <p id="form_output"></p>
+        </div>
+        
+        
     </div>
 <!--Контейнер функция для опускания footer в самый низ сайта-->
 <div class="push"></div> 
@@ -102,6 +140,6 @@
         </div>
     </div>
 </footer>
-<script src="scripts/script.js"></script>
+<script src="scripts/tasks2.js"></script>
 </body>
 </html>
