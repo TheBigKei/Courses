@@ -1,0 +1,27 @@
+Delete Invoke-WebRequest -Uri http://localhost:3000/user/1 -Method DELETE
+Select Invoke-RestMethod -Uri http://localhost:3000/user -Method Get
+
+Create 
+
+$body = @{
+    name = "John Doe"
+    email = "john.doe@example.com"
+    age = 25
+    country = "USA"
+    balance = 100.0
+} | ConvertTo-Json
+
+Invoke-RestMethod -Uri http://localhost:3000/user -Method Post -Body $body -ContentType "application/json"
+
+Update 
+
+$body = @{
+    name = "Updated Name"
+    email = "updated.email@example.com"
+    age = 30
+    country = "Canada"
+    balance = 150.0
+} | ConvertTo-Json
+
+Invoke-RestMethod -Uri http://localhost:3000/user/1 -Method Put -Body $body -ContentType "application/json"
+
