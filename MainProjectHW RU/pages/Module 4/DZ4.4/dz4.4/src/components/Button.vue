@@ -17,7 +17,7 @@ export default {
   },
   methods: {
     handleClick() {
-      this.$router.push('/Page2');
+      this.$router.push('/page2');
     },
     handleMouseOver() {
       this.buttonStyle.backgroundColor = 'lightblue';

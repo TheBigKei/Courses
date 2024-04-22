@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Page2 from '../views/Page2.vue';
+import Page2 from './components/page2';
 
 const routes = [
   {
