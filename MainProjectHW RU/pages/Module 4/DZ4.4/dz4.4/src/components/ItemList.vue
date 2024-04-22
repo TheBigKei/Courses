@@ -1,10 +1,8 @@
 <template>
-    <ul>
-      <li v-for="(item, index) in items" :key="index" @mouseover="changeBackgroundColor(index)" @mouseleave="resetBackgroundColor(index)" :style="{ backgroundColor: item.background }">
-        {{ item.text }}
-      </li>
-    </ul>
-  </template>
+  <ul>
+    <li v-for="item in items" :key="item.id">{{ item.text }}</li>
+  </ul>
+</template>
   
   <script>
   export default {

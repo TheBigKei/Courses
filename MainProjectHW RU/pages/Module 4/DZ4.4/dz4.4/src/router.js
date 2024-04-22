@@ -1,14 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import HomePage from './components/HomePage.vue';
-import OtherPage from './components/OtherPage.vue';
+import Page2 from '../views/Page2.vue';
 
 const routes = [
-  { path: '/', component: HomePage },
-  { path: '/other', component: OtherPage }
+  {
+    path: '/page2',
+    name: 'Page2',
+    component: Page2
+  }
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(process.env.BASE_URL),
   routes
 });
 
