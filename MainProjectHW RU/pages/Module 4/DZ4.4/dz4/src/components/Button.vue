@@ -1,6 +1,6 @@
 <template>
   <button @click="handleClick" :style="buttonStyle" @mouseover="handleMouseOver" @mouseleave="handleMouseLeave">
-    <slot></slot>
+    <slot>Next</slot>
   </button>
 </template>
 
@@ -17,7 +17,8 @@ export default {
   },
   methods: {
     handleClick() {
-      this.$router.push('/page2');
+      // Переход на страницу PageTwo.html
+      window.location.href = '/PageTwo.html';
     },
     handleMouseOver() {
       this.buttonStyle.backgroundColor = 'lightblue';
@@ -31,7 +32,9 @@ export default {
 
 <style scoped>
 button {
-  padding: 10px 20px;
+  color: red;
+  width: 60px;
+  height: 20px;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;

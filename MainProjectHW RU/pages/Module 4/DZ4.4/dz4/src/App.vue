@@ -15,7 +15,7 @@ export default {
   components: {
     Button,
     InputField,
-    ItemList,
+    ItemList
   }
 };
 </script>
